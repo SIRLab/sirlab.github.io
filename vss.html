@@ -110,8 +110,6 @@
 				<p><img src="assets/images/vss.jpg" alt="" class="" width="100%" ></p>
 				<p>
 					A categoria se trata de uma competição de futebol de robôs. Essa categoria está presente em competições, como: Competição Brasileira de Robótica (CBR) e a Competição Latino-Americana de Robótica (LARC). Nessa competição dois times teleoperados de três robôs se enfrentam em uma partida de futebol. Cada equipe é responsável por desenvolver todo o software e hardware para controlar seus robôs, possuindo uma câmera no centro do campo de 2 a 2.5m de altura, as equipes rodam algoritmos de visão computacional para reconhecer as poses de seus robôs, afim de manda-los executar alguma ação desejada.
-
-					<!--onde jogam dois times de três robôs, esses robôs além de serem teleoperados por um sistema dedicado autônomo não podem possuir mais do que 8x8x8cm de lado e o sensoriamento da posição dos robôs é feito com o auxilio de uma câmera posicionada a 2 metros de altura no centro do campo. A equipe SirSoccer do ensino supeior criou um software que além extrair as informações de posicionamento e orientação dos robôs e da bola também dita pontos para os robôs irem, assim há o controle automático de pontos para os robôs se posicionarem para realizar marcações e levar a bola para o gol adversário.-->
 				</p>
 				<p><img src="assets/images/game.png" alt="" class="" width="100%" ></p>
 				<p>
@@ -129,15 +127,21 @@
 				<header class="page-header">
 					<h1 class="page-title">Trabalhos realizados no VSSS</h1>
 				</header>
+				<p>
+					O SIRLab iniciou o desenvolvimento de um framework de desenvolvimento para a categoria IEEE Very Small Size Soccer, constituido dos projetos VSS-Vision, VSS-Simulator, VSS-Viewer e VSS-SampleStrategy. O framework tem o intuido de auxiliar equipes iniciantes na categoria, fornecendo programas "fechados" de utilização global, como nas categorias Small Size League, RoboCup 2D Soccer Simulation e RoboCup 3D Soccer Simulation. O framework utiliza as bibliotecas <a href="https://developers.google.com/protocol-buffers/" target="_blank">Protobuf</a> e <a href="http://zeromq.org/" target="_blank">ZMQ</a> para realizar a comunicação via socket entre os softwares fornecidos.
+				</p>
 				<h3>VSS-Vision</h3>
 				<h3>VSS-Simulator</h3>
 				<h3>VSS-Viewer</h3>
 				<p>
-				O VSS-Viewer é um visualizador de estados para a categoria IEEE Very Small Size Soccer. Esse visualizador é baseado no monitor padrão da categoria de futebol simulado, RoboCup 2D Soccer Simulation. O software possui um ambiente 3D que foi desenvolvido com a biblioteca freeglut em sua versão mais atual, o que possibilita uma representação da realidade simples e fiel, com pouco custo computacional. Com esse software é possível obter o estado do jogo dos softwares VSS-Vision e VSS-Simulator. O projeto está no <a href="https://github.com/SIRLab/VSS-Viewer" target="_blank">github do SIRLab</a> sob licença GPL 3.0.
+					O VSS-Viewer é um visualizador de estados para a categoria IEEE Very Small Size Soccer. Esse visualizador é baseado no monitor padrão da categoria de futebol simulado, RoboCup 2D Soccer Simulation. O software possui um ambiente 3D que foi desenvolvido com a biblioteca freeglut em sua versão mais atual, o que possibilita uma representação da realidade simples e fiel, com pouco custo computacional. Com esse software é possível obter o estado do jogo dos softwares VSS-Vision e VSS-Simulator. O projeto está no <a href="https://github.com/SIRLab/VSS-Viewer" target="_blank">github do SIRLab</a> sob licença GPL 3.0.
 				</p>
 				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/uyFlXV-0NnU" frameborder="0" allowfullscreen></iframe></p>
 				<h3>VSS-SampleStrategy</h3>
-
+				<p>
+					O VSS-SampleStrategy é uma estratégia exemplo de como trocar informações com o VSS-Vision e VSS-Simulator. Inicialmente está sendo desenvolvida em C++, porém quando a framework estiver pronto, poderá ser desenvolvida em qualquer linguagem que suporte Protobuf. O projeto está no <a href="https://github.com/SIRLab/VSS-SampleStrategy" target="_blank">github do SIRLab</a> sob licença GPL 3.0.
+				</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qYsNPGvAuME" frameborder="0" allowfullscreen></iframe></p>
 			</article>
 			<!-- /Article -->
 			
