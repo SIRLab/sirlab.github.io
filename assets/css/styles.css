@@ -797,3 +797,16 @@ footer.entry-meta .meta-in {
     max-width: 1080px;
   }
 }
+
+
+/*
+  MY MODIFICATIONS
+ */
+
+.linkedin-lattes{
+  position: relative;
+  width:22px;
+  left: 15px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
