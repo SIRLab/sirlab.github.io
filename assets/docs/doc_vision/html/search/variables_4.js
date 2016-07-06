@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['orientation',['orientation',['../structcommon_1_1glRigidBody.html#a42a6d3d6c58811c78271e37036a92ff4',1,'common::glRigidBody']]]
+  ['pose',['pose',['../structcommon_1_1Robot.html#a31960c8ccd21cde1ca66e263851b83ad',1,'common::Robot']]]
 ];

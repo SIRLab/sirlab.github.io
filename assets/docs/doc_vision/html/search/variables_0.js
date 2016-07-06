@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['color',['color',['../structcommon_1_1glRigidBody.html#a2dd2d63ce4377a5a376ad2efe111867a',1,'common::glRigidBody::color()'],['../structcommon_1_1TeamConfiguration.html#a8afeace68ff41ec91c5b333edc5cb1b2',1,'common::TeamConfiguration::color()']]],
-  ['control',['control',['../structcommon_1_1TeamConfiguration.html#a10a88422f2e3ff954e2ffbb5b4d9269e',1,'common::TeamConfiguration']]]
+  ['ball',['ball',['../structcommon_1_1State.html#ac4c33250cf2ef39fd319a64f0d51c7bd',1,'common::State']]],
+  ['ball_5fcolor',['ball_color',['../structcommon_1_1ExecConfiguration.html#a08b7bbd7185afc2f9050850771af86c8',1,'common::ExecConfiguration']]],
+  ['ball_5fkalman',['ball_kalman',['../structcommon_1_1State.html#ab6b6487077c6bf6fd8f308ad592c6470',1,'common::State']]]
 ];

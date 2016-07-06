@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linearmath',['LinearMath',['../classLinearMath.html',1,'']]]
+  ['mainwindow',['MainWindow',['../classMainWindow.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name',['name',['../structcommon_1_1TeamConfiguration.html#a8527b725b7f001bf18c9a1b828cb66bb',1,'common::TeamConfiguration']]]
+  ['max',['max',['../structcommon_1_1VisionColor.html#adc2c9c3c09c9694f7ce8e9c8d94407bd',1,'common::VisionColor']]],
+  ['min',['min',['../structcommon_1_1VisionColor.html#a3a8a40c24233df23f44510fce5846aaf',1,'common::VisionColor']]]
 ];

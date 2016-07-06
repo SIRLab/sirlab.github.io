@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name',['name',['../structcommon_1_1TeamConfiguration.html#a8527b725b7f001bf18c9a1b828cb66bb',1,'common::TeamConfiguration']]]
+  ['leaveevent',['leaveEvent',['../classQCustomLabel.html#a99b5c445f092757d5f1e59c6aee6fb88',1,'QCustomLabel']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['init',['init',['../classCore.html#a95b5c90a86bd4f1dec37edb1f32a6406',1,'Core']]],
-  ['interface_5fthread',['interface_thread',['../classCore.html#abde3aec3f59323e87352dbca0eef1d1e',1,'Core']]]
+  ['finish',['finish',['../classcalibration.html#a01c20860fb99a2370c191b0228e82af4',1,'calibration']]],
+  ['finishcalibrationcolors',['finishCalibrationColors',['../classMainWindow.html#aaed408509f0ec209d5113b6d838f223a',1,'MainWindow']]],
+  ['finishplotvalues',['finishPlotValues',['../classMainWindow.html#a71bb19c8988c81c52cf8856295584ff5',1,'MainWindow']]]
 ];

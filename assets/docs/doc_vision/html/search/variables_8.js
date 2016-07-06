@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['task',['task',['../structcommon_1_1TeamConfiguration.html#a16540deca1bbcf8d2420bdb1afabeff0',1,'common::TeamConfiguration']]],
-  ['teamcolor',['teamColor',['../structcommon_1_1TeamConfiguration.html#ad1a072b478a9d1e561d28bbc605b19b7',1,'common::TeamConfiguration']]],
-  ['transmission',['transmission',['../structcommon_1_1TeamConfiguration.html#ade29b8715fcef924b67839062cdf42a8',1,'common::TeamConfiguration']]]
+  ['v_5fball',['v_ball',['../structcommon_1_1State.html#af909736805817197988afad7f5b20a9f',1,'common::State']]],
+  ['v_5fball_5fkalman',['v_ball_kalman',['../structcommon_1_1State.html#adc2d51526dffd90f889324c90fa082a0',1,'common::State']]],
+  ['v_5fpose',['v_pose',['../structcommon_1_1Robot.html#a8114313ba162326a4cb51ce4d5c992f2',1,'common::Robot']]]
 ];
