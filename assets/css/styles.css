@@ -810,13 +810,3 @@ footer.entry-meta .meta-in {
   margin-right: 2px;
   margin-left: 2px;
 }
-
-.custom_class_image{
-  float: left;
-  position: relative;
-}
-
-#custom_image{
-  float: center;
-  position: relative;
-}
