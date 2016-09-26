@@ -129,28 +129,16 @@
 					<h1 class="page-title">Trabalhos realizados no VSSS</h1>
 				</header>
 				<p>
-					O SIRLab iniciou o desenvolvimento de um framework de desenvolvimento para a categoria IEEE Very Small Size Soccer, constituido dos projetos VSS-Vision, VSS-Simulator, VSS-Viewer e VSS-SampleStrategy. O framework tem o intuido de auxiliar equipes iniciantes na categoria, fornecendo programas "fechados" de utilização global, como nas categorias Small Size League, RoboCup 2D Soccer Simulation e RoboCup 3D Soccer Simulation. O framework utiliza as bibliotecas <a href="https://developers.google.com/protocol-buffers/" target="_blank">Protobuf</a> e <a href="http://zeromq.org/" target="_blank">ZMQ</a> para realizar a comunicação via socket entre os softwares fornecidos.
+					O SIRLab iniciou o desenvolvimento de um SDK para a categoria IEEE Very Small Size Soccer, constituido dos projetos VSS-Vision, VSS-Simulator, VSS-Viewer, VSS-SampleStrategy, VSS-Joystick e VSS-GameLogger.
+					O SDK tem o intuido de auxiliar equipes iniciantes na categoria, fornecendo programas "fechados" de utilização global, como nas categorias Small Size League, RoboCup 2D Soccer Simulation e
+					RoboCup 3D Soccer Simulation. São utilizas as bibliotecas <a href="https://developers.google.com/protocol-buffers/" target="_blank">Protobuf</a> e <a href="http://zeromq.org/" target="_blank">ZMQ</a> para
+					realizar a comunicação via socket entre os softwares fornecidos.
 				</p>
-				<h3>VSS-Vision</h3>
+				<h3>VSS-SDK/h3>
 				<p>
-					O VSS-Vision é um programa de visão computacional para a categoria IEEE Very Small Size Soccer. Esse sistema de visão é baseado no SSL-Vision, padrão da categoria Small Size League, o software utiliza a biblioteca <a href="http://opencv.org/documentation/opencv-2-4-9.html" target="_blank">OpenCV</a> para reconhecer as etiquetas em campo. O sistema abre uma transmissão multicast para enviar os estados do jogo. O projeto está no <a href="https://github.com/SIRLab/VSS-Vision" target="_blank">github do SIRLab</a> sob licença GPL 3.0 e sua documentação encontra-se <a href="http://sirlab.github.io/VSS-Vision/" target="_blank">aqui</a>.
+					Para mais informações sobre o VSS-SDK, <a href="https://sirlab.github.io/VSS-SDK/index.html">clique aqui</a>.
+					<iframe width="560" height="315" src="https://www.youtube.com/watch?v=2Yo8s7w7rTE" frameborder="0" allowfullscreen></iframe>
 				</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/LnWzAgE9Oqs" frameborder="0" allowfullscreen></iframe>
-				<h3>VSS-Simulator</h3>
-				<p>
-					O VSS-Simulator é um simulador de partidas para a categoria IEEE Very Small Size Soccer. O simulador visa a possibilidade de facilitar o desenvolvimento de estratégias para a categoria, possibilitando executar inúmeros jogos acelerando o tempo em x10 e x100 e gerando um relatório dos jogos. O simulador foi construído utilizando a biblioteca <a href="http://bulletphysics.org/wordpress/" target="_blank">Bullet Physics</a>, conhecida por sua precisão, porém foram executados adaptações na biblioteca, afim de atender melhor nosso propósito. O sistema abre uma transmissão multicast para enviar os estados do jogo e recepções unicast para receber os comandos de cada robô. O projeto está no <a href="https://github.com/SIRLab/VSS-Simulator" target="_blank">github do SIRLab</a> sob licença MIT.
-				</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/PZ5toHCb7KY" frameborder="0" allowfullscreen></iframe>
-				<h3>VSS-Viewer</h3>
-				<p>
-					O VSS-Viewer é um visualizador de estados para a categoria IEEE Very Small Size Soccer. Esse visualizador é baseado no monitor padrão da categoria de futebol simulado, RoboCup 2D Soccer Simulation. O software possui um ambiente 3D que foi desenvolvido com a biblioteca freeglut em sua versão mais atual, o que possibilita uma representação da realidade simples e fiel, com pouco custo computacional. Com esse software é possível obter o estado do jogo dos softwares VSS-Vision e VSS-Simulator. O projeto está no <a href="https://github.com/SIRLab/VSS-Viewer" target="_blank">github do SIRLab</a> sob licença GPL 3.0 e sua documentação encontra-se <a href="http://sirlab.github.io/VSS-Viewer/"" target="_blank">aqui</a>.
-				</p>
-				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/uyFlXV-0NnU" frameborder="0" allowfullscreen></iframe></p>
-				<h3>VSS-SampleStrategy</h3>
-				<p>
-					O VSS-SampleStrategy é uma estratégia exemplo de como trocar informações com o VSS-Vision e VSS-Simulator. Inicialmente está sendo desenvolvida em C++, porém quando a framework estiver pronto, poderá ser desenvolvida em qualquer linguagem que suporte Protobuf. O projeto está no <a href="https://github.com/SIRLab/VSS-SampleStrategy" target="_blank">github do SIRLab</a> sob licença GPL 3.0.
-				</p>
-				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qYsNPGvAuME" frameborder="0" allowfullscreen></iframe></p>
 			</article>
 			<!-- /Article -->
 
