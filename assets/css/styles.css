@@ -364,6 +364,7 @@ img {
 .featured {
   font-size: 13px;
   font-size: 0.8125rem;
+  padding: 0 20px;
 }
 .featured h3 {
   font-weight: bold;
@@ -635,6 +636,9 @@ footer.entry-meta .meta-in {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
+}
+footer .container .row {
+  padding-bottom: 15px;
 }
 .page-header {
   padding-bottom: 0;
