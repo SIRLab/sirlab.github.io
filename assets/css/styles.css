@@ -376,6 +376,9 @@ img {
   vertical-align: middle;
   margin: 0 0 25px 0;
 }
+.featured .row .col-sm-6.col-md-6 h4 + p {
+  margin: 0;
+}
 /* Section - Recent works */
 .thumbnails {
   padding: 0;
