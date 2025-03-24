@@ -1,188 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eventos e competições do Laboratório de Sistemas Inteligentes e Robótica (SIRLab) da FAETERJ-Petrópolis">
-    <meta name="author" content="SIRLab FAETERJ-Petrópolis">
+    <meta name="description" content="Eventos do Laboratório de Sistemas Inteligentes e Robótica - FAETERJ Petrópolis">
     
-    <title>SIRLab: Eventos e Competições</title>
-
-    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+    <title>SIRLab - Eventos</title>
     
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Icon font -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;700&display=swap">
+    
+    <!-- Estilos Customizados -->
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+        }
 
-    <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .parallax-header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('assets/images/lab-bg.jpg') center/cover fixed;
+            color: white;
+            padding: 120px 0;
+        }
+
+        .event-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Cabeçalho -->
+    <header class="parallax-header">
+        <div class="container text-center">
+            <img src="assets/images/sir-logo.png" alt="Logo SIRLab" class="mb-4" width="150">
+            <h1 class="display-4 mb-3">Laboratório de Sistemas Inteligentes e Robótica</h1>
+            <p class="lead">FAETERJ Petrópolis</p>
+        </div>
+    </header>
 
-<header id="header">
-    <div id="head" class="parallax" parallax-speed="2">
-        <h1 id="logo" class="text-center">
-            <img class="img-circle" src="assets/images/sir.png" alt="Logo SIRLab">
-            <span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
-            <span class="tagline">FAETERJ-Petrópolis<br>
-            <a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a></span>
-        </h1>
-    </div>
-
+    <!-- Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">SIRLab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="members.html">Membros</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Eventos</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Projetos
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
-                            <li><a class="dropdown-item" href="2d.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
-                            <li><a class="dropdown-item" href="build.html">Simulação de Resgate: Rescue Jr.</a></li>
-                            <li><a class="dropdown-item" href="build.html">Casa Inteligente</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="vss.html">Futebol de Robôs</a></li>
+                            <li><a class="dropdown-item" href="2d.html">Simulação 2D</a></li>
+                            <li><a class="dropdown-item" href="rescue.html">Simulação de Resgate</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="works.html">Trabalhos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="media.html">Mídia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
                 </ul>
             </div>
-        </div>  
+        </div>
     </nav>
-</header>
 
-<main id="main">
-    <div class="container">
-        <div class="row topspace">
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <div class="row g-4">
             <!-- Sidebar -->
-            <aside class="col-lg-4 sidebar sidebar-right">
-                <div class="card mb-4">
+            <aside class="col-lg-4">
+                <div class="card event-card">
                     <div class="card-body">
-                        <h4 class="card-title">Eventos</h4>
-                        <p class="card-text">Aqui encontram-se todos os eventos e competições que o SIRLab participa.</p>
-                    </div>
-                </div>
-                
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Próximos Eventos</h5>
+                        <h2 class="h4 card-title mb-4">Navegação de Eventos</h2>
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">Competição Brasileira de Robótica 2023</a>
-                            <a href="#" class="list-group-item list-group-item-action">LARC 2023</a>
-                            <a href="#" class="list-group-item list-group-item-action">OBR Regional 2023</a>
+                            <a href="#cbr" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <i class="fas fa-robot me-3"></i>
+                                Competição Brasileira
+                            </a>
+                            <a href="#larc" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <i class="fas fa-globe-americas me-3"></i>
+                                Competição Latino-Americana
+                            </a>
+                            <a href="#obr" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <i class="fas fa-graduation-cap me-3"></i>
+                                Olimpíada Brasileira
+                            </a>
                         </div>
                     </div>
                 </div>
             </aside>
-            <!-- /Sidebar -->
 
-            <!-- Article main content -->
-            <article class="col-lg-8 maincontent">
-                <div class="mb-5">
-                    <h3>Competição Brasileira de Robótica</h3>
-                    <img src="assets/images/cbr2013.jpg" alt="Competição Brasileira de Robótica 2013" class="img-fluid rounded mb-3">
-                    <p>A Competição Brasileira de Robótica (CBR), na foto em sua realização em Fortaleza - CE (2013), é uma das competições referentes à Competição Mundial de Robótica (RoboCup). Nela, alunos de graduação e pós-graduação se empenham para construir robôs a fim de participar das categorias existentes e desenvolver pesquisa nas áreas de robótica e inteligência computacional e artificial.</p>
-                    <p>Realizada desde 2003, a competição já passou pelas seguintes localidades: <strong>Bauru - SP, Salvador - BA, São Luís - MA, Campo Grande - MS, Florianópolis - SC, Brasília - DF, São Bernardo do Campo - SP, São João del-Rei - MG, Fortaleza - CE, São Carlos - SP e Uberlândia - MG</strong>.</p>
-                    <p>O evento abriga as seguintes competições: <strong>RoboCup Small Size Soccer (F-180), RoboCup 2D Soccer Simulation, RoboCup 3D Soccer Simulation, RoboCup Humanoid and Standard Platform League (SPL), RoboCup Rescue Simulation Agents, RoboCup @Home, RoboCup Junior, RoboCup Festo Logistics, IEEE Standard Educational Kits (SEK), IEEE Open, IEEE Very Small Size Soccer (VSS) e IEEE Humanoid Robot Racing</strong>. <a href="http://www.cbrobotica.org/" target="_blank" class="text-primary">Site oficial</a>.</p>
-                </div>
+            <!-- Eventos -->
+            <div class="col-lg-8">
+                <!-- CBR -->
+                <section id="cbr" class="card event-card mb-4">
+                    <img src="assets/images/cbr-event.jpg" class="card-img-top" alt="Competição Brasileira de Robótica">
+                    <div class="card-body">
+                        <h2 class="card-title h3">Competição Brasileira de Robótica</h2>
+                        <div class="meta mb-3">
+                            <span class="badge bg-primary">Anual</span>
+                            <span class="text-muted ms-2"><i class="fas fa-map-marker-alt"></i> Várias Cidades</span>
+                        </div>
+                        <p class="card-text">Principal evento nacional de robótica competitiva que reúne instituições de ensino superior desde 2003.</p>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="h5">Categorias Principais</h3>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-futbol me-2"></i>Futebol de Robôs</li>
+                                            <li><i class="fas fa-laptop-code me-2"></i>Simulação 2D/3D</li>
+                                            <li><i class="fas fa-home me-2"></i>RoboCup @Home</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h3 class="h5">Estatísticas</h3>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-users me-2"></i>+500 participantes</li>
+                                            <li><i class="fas fa-university me-2"></i>+50 instituições</li>
+                                            <li><i class="fas fa-trophy me-2"></i>15 edições realizadas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="mb-5">
-                    <h3>Competição Latino-Americana de Robótica</h3>
-                    <img src="assets/images/larc.jpg" alt="Competição Latino-Americana de Robótica" class="img-fluid rounded mb-3">
-                    <p>A Competição Latino-Americana de Robótica (LARC), na foto em sua realização em São Carlos - SP (2014), é uma das competições referentes à Competição Mundial de Robótica (RoboCup). Nela, alunos de graduação e pós-graduação se empenham para construir robôs a fim de participar das categorias existentes e desenvolver pesquisa nas áreas de robótica e inteligência computacional e artificial.</p>
-                    <p>Realizada desde 2003, a competição já passou por diversos países como: <strong>Brasil, Peru e Uruguai</strong>.</p>
-                    <p>O evento abriga as seguintes competições: <strong>RoboCup Small Size Soccer (F-180), RoboCup 2D Soccer Simulation, RoboCup 3D Soccer Simulation, RoboCup Humanoid and Standard Platform League (SPL), RoboCup Rescue Simulation Agents, RoboCup @Home, RoboCup Junior, RoboCup Festo Logistics, IEEE Standard Educational Kits (SEK), IEEE Open, IEEE Very Small Size Soccer (VSS) e IEEE Humanoid Robot Racing</strong>. <a href="http://www.cbrobotica.org/" target="_blank" class="text-primary">Site oficial</a>.</p>
-                </div>
+                <!-- LARC -->
+                <section id="larc" class="card event-card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title h3">Competição Latino-Americana</h2>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-6">
+                                <img src="assets/images/larc-event.jpg" class="img-fluid rounded" alt="Competição Latino-Americana">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Evento internacional que promove a integração entre países da América Latina através da robótica:</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <i class="fas fa-flag me-3"></i>
+                                        Países participantes: Brasil, Argentina, Chile
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <i class="fas fa-calendar-alt me-3"></i>
+                                        Realização bienal
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="mb-5">
-                    <h3>Olimpíada Brasileira de Robótica</h3>
-                    <img src="assets/images/obr_usp.JPG" alt="Olimpíada Brasileira de Robótica 2015" class="img-fluid rounded mb-3">
-                    <p>A Olimpíada Brasileira de Robótica (OBR), na foto em sua realização em São Carlos - SP (2015), é uma competição onde alunos de ensino fundamental e médio trabalham na construção de robôs de resgate. A competição é baseada na categoria RoboCup Jr. Os robôs devem ser capazes de seguir uma fita preta que representa um caminho até uma vítima. O caminho possui quebra-molas, passagens sem a fita, obstáculos, curvas obrigatórias e outras dificuldades. <a href="http://www.obr.org.br/" target="_blank" class="text-primary">Site oficial</a>.</p>
-                </div>
-
-                <div class="mb-5">
-                    <h3>Torneio Juvenil de Robótica</h3>
-                    <img src="assets/images/tjr_ist.jpg" alt="Torneio Juvenil de Robótica 2015" class="img-fluid rounded mb-3">
-                    <p>O Torneio Juvenil de Robótica (TJR), na foto em sua realização em Petrópolis - RJ (2015), é uma competição onde alunos de ensino fundamental e médio trabalham na construção de robôs de resgate e robôs de sumô.</p>
-                </div>
-
-                <div class="mb-5">
-                    <h3>Mostra Nacional de Robótica</h3>
-                    <img src="assets/images/mnr.jpg" alt="Mostra Nacional de Robótica" class="img-fluid rounded mb-3">
-                    <p>A Mostra Nacional de Robótica (MNR) é a maior mostra científica de trabalhos de robótica do país, com o objetivo de expor e divulgar trabalhos na área de robótica. <a href="http://www.mnr.org.br/" target="_blank" class="text-primary">Site oficial</a>.</p>
-                </div>
-            </article>
-            <!-- /Article -->
-        </div>
-    </div>  <!-- /container -->
-</main>
-
-<footer id="footer" class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Contato</h3>
-                <p>
-                    <i class="fas fa-phone-alt me-2"></i> (24) 2235-1079<br>
-                    <i class="fas fa-envelope me-2"></i> <a href="mailto:sirlab.faeterj@gmail.com" class="text-white">sirlab.faeterj@gmail.com</a><br>
-                    <i class="fas fa-map-marker-alt me-2"></i> Av. Getúlio Vargas, 335 - Quitandinha - CEP: 25651-075 - Petrópolis - RJ - Laboratório de Robótica
-                </p>    
+                <!-- OBR -->
+                <section id="obr" class="card event-card">
+                    <div class="card-body">
+                        <h2 class="card-title h3">Olimpíada Brasileira de Robótica</h2>
+                        <div class="alert alert-info">
+                            <h3 class="h4">Edição 2023</h3>
+                            <p>Competição nacional para estudantes do ensino fundamental e médio:</p>
+                            <ul class="icon-list">
+                                <li><i class="fas fa-user-graduate"></i> Foco em educação STEM</li>
+                                <li><i class="fas fa-tasks"></i> Desafios práticos de resgate</li>
+                                <li><i class="fas fa-award"></i> Premiação por categorias</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
+        </div>
+    </main>
 
-            <div class="col-md-4">
-                <h3>Siga-nos</h3>
-                <div class="social-links">
-                    <a href="https://github.com/SIRLab" target="_blank" class="text-white me-2"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="https://www.facebook.com/sirlab.faeterj" target="_blank" class="text-white me-2"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank" class="text-white me-2"><i class="fab fa-youtube fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/company/10131024" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+    <!-- Rodapé -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h5">Contato</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Av. Getúlio Vargas, 335</li>
+                        <li><i class="fas fa-phone me-2"></i>(24) 2235-1079</li>
+                        <li><i class="fas fa-envelope me-2"></i>sirlab@faeterj.edu.br</li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="h5">Links Rápidos</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">Sobre Nós</a></li>
+                        <li><a href="projects.html" class="text-white">Projetos</a></li>
+                        <li><a href="contact.html" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="h5">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-
-<footer id="underfooter" class="bg-secondary text-white py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col text-end">
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
                 <p class="mb-0">
-                    Copyright &copy; 2023, SIRLab: Laboratório de Sistemas Inteligentes e Robótica<br>
-                    Design: <a href="http://www.gettemplate.com" rel="designer" class="text-white">Initio by GetTemplate</a>
+                    © 2023 SIRLab - Todos os direitos reservados<br>
+                    Desenvolvido com <i class="fas fa-heart text-danger"></i> pela equipe
                 </p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/template.js"></script>
-
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61419819-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ativa scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
