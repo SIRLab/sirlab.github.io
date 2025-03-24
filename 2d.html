@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	<meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 	
 	<title>SIRLab: 2D</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
 	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Icon font -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700&display=swap">
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 
@@ -26,10 +26,10 @@
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/sir.png" alt="">
+			<img class="img-circle" src="assets/images/sir.png" alt="Logo SIRLab">
 			<span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
 			<span class="tagline">FAETERJ-Petrópolis<br>
-			<a href="">sirlab.faeterj@gmail.com</a></span>
+			<a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a></span>
 		</h1>
 	</div>
 
@@ -37,11 +37,15 @@
 		<div class="container-fluid">
 			
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
 			
-			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
-				
+			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="about.html">Sobre</a></li>
@@ -52,7 +56,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
 							<li><a href="build.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
-							<li><a href="build.html">Simulação de Restage: Rescue Jr.</a></li>
+							<li><a href="build.html">Simulação de Resgate: Rescue Jr.</a></li>
 							<li><a href="build.html">Casa Inteligente</a></li>
 						</ul>
 					</li>
@@ -60,125 +64,101 @@
 					<li><a href="media.html">Mídia</a></li>
 					<li><a href="blog.html">História</a></li>
 				</ul>
-			
-			</div><!--/.nav-collapse -->			
+			</div>
 		</div>	
 	</nav>
 </header>
 
 <main id="main">
-
 	<div class="container">
-
 		<div class="row topspace">
-			
-			<!-- Sidebar -->
 			<aside class="col-md-4 sidebar sidebar-left">
-
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4>Futebol Simulado</h4>
-						<p>Essa é a categoria mais antiga das competições simuladas da RoboCup, nessa categoria busca-se simular de maneira mais realistica possível uma partida de futebol.</p>
+						<p>Categoria mais antiga da RoboCup, simulando partidas de futebol de forma realística.</p>
 					</div>
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4>Diagrama de Voronoi</h4>
-						<p><img src="assets/images/voronoi.png" alt=""></p>
+						<img src="assets/images/voronoi.png" alt="Diagrama de Voronoi" class="img-responsive">
 					</div>
-					<div class="col-xs-12">
+					<div class="col-xs-12 top-space">
 						<h4>Equação: Evolução Diferencial</h4>
-						<p><p><img src="assets/images/DE.png" alt="" class="" width="100%" ></p></p>
+						<img src="assets/images/DE.png" alt="Evolução Diferencial" class="img-responsive">
 					</div>
 				</div>
+			</aside>
 
-			</aside>			<!-- /Sidebar -->
-
-			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
 				<header class="page-header">
 					<h1 class="page-title">RoboCup 2D Soccer Simulation</h1>
 				</header>
-				<p><img src="assets/images/2d.png" alt="" class="" width="100%" ></p>
-				<p>
-					A categoria se trata de uma competição simulada de futebol, estando presente em competições, como: Competição Brasileira de Robótica (CBR), Competição Latino-Americana de Robótica (LARC) e a Competição Mundial de Robótica (RoboCup). Nessa competição é utilizado o paradigma de programação orientado a agentes que trata-se de uma inteligência computacional ou articial distribuída com finalidade de resolver um problema maior. Na categoria dois times de 11 agentes jogam futebol em um simulador desenvolvido para ambientar de forma realística um jogo de futebol. Os agentes ficam cansados, se machucam, possuem a visão de somente 180º a sua frente, somente escutam comandos de outros agentes a uma distância máxima de 5 metros e precisam a todo instante trocar informações entre sí.
-				</p>
+				<img src="assets/images/2d.png" alt="Simulação 2D" class="img-responsive">
+				<p class="top-space">Competição simulada presente em eventos como CBR, LARC e RoboCup, utilizando agentes inteligentes com visão limitada e comunicação restrita para simulação realista de futebol.</p>
 			</article>
-			<!-- /Article -->
 
-			<!-- Article main content -->
-			<article class="col-sm-11 maincontent">
+			<article class="col-sm-11 maincontent top-space">
 				<header class="page-header">
-					<h1 class="page-title">Trabalhos realizados no 2D</h1>
+					<h1 class="page-title">Trabalhos Realizados no 2D</h1>
 				</header>
-				<p>
-					Foi utilizando a base HELIOS para desenvolver os trabalhos do laboratório, por padrão é utilizado uma malha de pontos que definem o posicionamento dos agentes em campo em relação a localização da bola em campo, como pode ser visto abaixo:
-				</p>
-				<p><img src="assets/images/delauney.png" alt="" class="" width="100%" ></p>
-				<p>
-					Essa malha criada a partir da técnica de triangulação de delauney é responsável pelo movimento dos a gentes em campo, ou seja, está diretamente relacionada com a quantidade de passos que cada a gente deve realizar em campo. Caso essa malha seja mal balanceada os jogadores começam a se cansar mais do que o normal. Para definirmos a melhor configuração que uma malha pode possuir, empregamos com sucesso uma técnica de inteligência computacional, um algoritmo evolutivo conhecido por Evolução Diferencial (DE). A técnica consiste em representar uma solução, ou seja, a malha, como um indivíduo de uma população. A partir desse indivíduo é aplicado uma mutação no mesmo, por exemplo, alterar um ponto na malha, adicionar um ponto na malha ou remover um ponto da malha, assim gerando uma população de N indivíduos diferentes do original. Por fim os individuos são avaliados e uma parcela passa para uma nova geração que também sofre mutações da população anterior, esse processo é repetido K vezes até que a malha converja para uma solução boa.
-				</p>
-
+				<p>Desenvolvimento utilizando base HELIOS com malha de pontos baseada em triangulação de Delaunay para posicionamento estratégico.</p>
+				<img src="assets/images/delauney.png" alt="Triangulação de Delaunay" class="img-responsive">
+				<p class="top-space">Aplicação de algoritmo evolutivo (Evolução Diferencial) para otimização da malha de posicionamento, considerando fadiga dos jogadores e eficiência tática.</p>
 			</article>
-			<!-- /Article -->
-
 		</div>
-	</div>	<!-- /container -->
-	
+	</div>
 </main>
 
 <footer id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 widget">
+			<div class="col-md-6 widget">
 				<h3 class="widget-title">Contato</h3>
 				<div class="widget-body">
 					<p>(24) 2235-1079<br>
-						<a href="mailto:#">sirlab.faeterj@gmail.com</a><br>
-						<br>
-						Av. Getúlio Vargas, 335 - Quitandinha - CEP: 25651-075 - Petrópolis - RJ - Laboratório de Robótica
+						<a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a><br>
+						Av. Getúlio Vargas, 335 - Quitandinha<br>
+						Petrópolis - RJ - Laboratório de Robótica
 					</p>	
 				</div>
 			</div>
 
-			<div class="col-md-2 widget">
-				<h3 class="widget-title">Siga-nos</h3>
+			<div class="col-md-6 widget">
+				<h3 class="widget-title">Redes Sociais</h3>
 				<div class="widget-body">
 					<p class="follow-me-icons">
-						<a href="https://github.com/SIRLab" target="_blank"><i class="fa fa-github fa-2"></i></a>
-						<a href="https://www.facebook.com/sirlab.faeterj" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-						<a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank"><i class="fa fa-youtube fa-2"></i></a>
-						<a href="https://www.linkedin.com/company/10131024?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10131024%2Cidx%3A1-1-1%2CtarId%3A1440299776662%2Ctas%3ASIR%20Lab" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="https://github.com/SIRLab" target="_blank" rel="noopener"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.facebook.com/sirlab.faeterj" target="_blank" rel="noopener"><i class="fa fa-facebook fa-2x"></i></a>
+						<a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank" rel="noopener"><i class="fa fa-youtube fa-2x"></i></a>
+						<a href="https://www.linkedin.com/company/sirlab" target="_blank" rel="noopener"><i class="fa fa-linkedin fa-2x"></i></a>
 					</p>
 				</div>
 			</div>
-
-		</div> <!-- /row of widgets -->
+		</div>
 	</div>
 </footer>
 
 <footer id="underfooter">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; 2016, SIRLab: Laboratório de Sistemas Inteligentes e Robótica<br> 
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
-				</div>
+			<div class="col-md-12 text-center">
+				<p class="copyright">
+					Copyright &copy; 2016-2023 SIRLab<br>
+					Design adaptado de <a href="https://gettemplate.com" rel="designer" target="_blank" rel="noopener">Initio by GetTemplate</a>
+				</p>
 			</div>
-
-		</div> <!-- /row of widgets -->
+		</div>
 	</div>
 </footer>
 
-
-
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
 
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -187,7 +167,6 @@
 
   ga('create', 'UA-61419819-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
 </body>
