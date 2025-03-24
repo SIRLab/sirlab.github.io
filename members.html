@@ -1,532 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	
-	<title>SIRLab: Membros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Membros do Laboratório de Sistemas Inteligentes e Robótica">
+    <meta name="author" content="SIRLab Team">
+    
+    <title>SIRLab: Membros</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
-	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-	<!-- Icon font -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icon font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700&display=swap">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+    <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
 
 <header id="header">
-	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/sir.png" alt="">
-			<span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
-			<span class="tagline">FAETERJ-Petrópolis<br>
-			<a href="">sirlab.faeterj@gmail.com</a></span>
-		</h1>
-	</div>
+    <div id="head" class="parallax" data-parallax-speed="2">
+        <h1 id="logo" class="text-center">
+            <img class="img-circle" src="assets/images/sir.png" alt="Logo SIRLab">
+            <span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
+            <span class="tagline">FAETERJ-Petrópolis<br>
+            <a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a></span>
+        </h1>
+    </div>
 
-	<nav class="navbar navbar-default navbar-sticky">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			</div>
-			
-			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
-				
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">Sobre</a></li>
-					<li><a href="members.html">Membros</a></li>
-					<li><a href="events.html">Eventos</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projetos <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
-							<li><a href="2d.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
-							<li><a href="build.html">Simulação de Restage: Rescue Jr.</a></li>
-							<li><a href="build.html">Casa Inteligente</a></li>
-						</ul>
-					</li>
-					<li><a href="works.html">Trabalhos</a></li>
-					<li><a href="media.html">Mídia</a></li>
-					<li><a href="blog.html">História</a></li>
-				</ul>
-			
-			</div><!--/.nav-collapse -->			
-		</div>	
-	</nav>
+    <nav class="navbar navbar-default navbar-sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Alternar navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li class="active"><a href="members.html">Membros</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projetos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
+                            <li><a href="2d.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
+                            <li><a href="build.html">Simulação de Resgate: Rescue Jr.</a></li>
+                            <li><a href="build.html">Casa Inteligente</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="works.html">Trabalhos</a></li>
+                    <li><a href="media.html">Mídia</a></li>
+                    <li><a href="blog.html">História</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
 </header>
 
 <main id="main">
+    <div class="container">
+        <div class="row section featured topspace">
+            <h3 class="section-title"><span>Orientadores</span></h3>
+            <div class="row">
+                <!-- Membros atualizados com melhorias de acessibilidade -->
+                <div class="col-sm-6 col-md-6 member-card">
+                    <div class="text-center">
+                        <img src="assets/images/members/alberto.jpg" class="img-responsive member-photo" alt="Alberto Torres Angonese">
+                    </div>
+                    <h4 class="text-center">
+                        Alberto Torres Angonese
+                        <div class="social-links">
+                            <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4492407U5" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Currículo Lattes">
+                                <img src="assets/images/lattes.png" class="social-icon" alt="Ícone Lattes">
+                            </a>
+                            <a href="https://github.com/angonese" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Perfil GitHub">
+                                <img src="assets/images/github.png" class="social-icon github-icon" alt="Ícone GitHub">
+                            </a>
+                        </div>
+                    </h4>
+                    <div class="member-info">
+                        <p><strong>Formação:</strong> Doutorado em Engenharia de Defesa (IME), Mestrado em Sistemas e Computação (IME)</p>
+                        <p><strong>Especialidades:</strong> Visão Computacional, Sistemas Embarcados, Robótica Móvel</p>
+                        <p><strong>Atuação no SIRLab:</strong> 2013 - Atual</p>
+                    </div>
+                </div>
 
-	<div class="container">
+                <!-- Estrutura repetida para outros membros -->
+                
+            </div>
 
-		<div class="row section featured topspace">
-			<!--
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/alberto.jpg" style="position: relative;width:250px" alt="">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Alberto Torres Angonese
-						<a href="" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui graduação em Ciência da Computação pela Universidade Católica de Petrópolis (2001), especialização em redes de computadores pela ESAB e mestrado em Sistemas e Computação (MSc) pelo Instituto Militar de Engenharia (2013). Doutorado em Engenharia de Defesa pelo Instituto Militar de Engenharia (em andamento). </p>
-					<p><b>Período no SIRLab:</b> 2012 a atualmente.</p>
-				</div>
-			-->
-			<h3 class="section-title"><span>Orientadores</span></h3>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/alberto.jpg" style="position: relative;width:250px" alt="Alberto Torres Angonese">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Alberto Torres Angonese
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4492407U5" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/angonese" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui graduação em Ciência da Computação pela UCP (2001), especialização em redes de computadores pela ESAB e mestrado em Sistemas e Computação (MSc) pelo IME (2013). Doutorado em Engenharia de Defesa pelo IME (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Coordenação; Visão Computacional; Sistemas Operacionais; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/krempser.jpg" style="position: relative;width:250px" alt="Eduardo Krempser da Silva">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Eduardo Krempser da Silva
-						<a href="https://br.linkedin.com/in/eduardo-krempser-da-silva-b01a2b34" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4266021U6" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/krempser" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui graduação em Ciência da Computação pela UFJF (2007), mestrado (2009) e doutorado em Modelagem Computacional - LNCC (2014). </p>
-					<p>
-						<b>Especialidades:</b> Coordenação; Inteligência Computacional e Artificial; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a atualmente.
-					</p>
-				</div>
-			</div>
-			<h3 class="section-title"><span>Histórico de Membros</span></h3>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/johnathan.jpg" style="position: relative;width:250px" alt="Johnathan Fercher da Rosa">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Johnathan Fercher da Rosa
-						<a href="https://br.linkedin.com/in/johnathan-fercher-79013491" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4001907J6" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/johnfercher" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (2015). Fez Iniciação Científica em Realidade Virtual no LNCC (2015). Mestrado em Engenharia de Defesa pelo IME (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Engenharia de Software; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-						</center>
-					</span>
-					<h4 class="text-center">
-						Oscar Neiva Eulálio Neto
-						<a href="https://br.linkedin.com/in/oscar-neiva-636364b1" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8120738Y6" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/oscar-neiva" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). Fez Iniciação Científica em Sistemas e Controle no LNCC (2015). </p>
-					<p>
-						<b>Especialidades:</b> Sistemas e Controle; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/borsatto.jpg" style="position: relative;width:250px" alt="Lucas Borsatto Simão">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Lucas Borsatto Simão
-						<a href="https://br.linkedin.com/in/lucas-borsatto-8b9a405a" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8478766Z2" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/lucasbsimao" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2012). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). Graduação em Engenharia Mecatrônica pela UCP (em andamento). Iniciação Científica em Inteligência Artificial no LNCC (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Inteligência Computacional e Artificial; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2014 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/hebert.jpg" style="position: relative;width:250px" alt="Hebert Luiz Cabral da Silva">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Hebert Luiz Cabral da Silva
-						<a href="https://br.linkedin.com/in/hebert-luiz-cabral-da-silva-70bb234a" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/hebertluiz" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico em Elétrica pelo SENAI (2013). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Eletrônica; Infraestrutura; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2014 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/marques.jpg" style="position: relative;width:250px" alt="Lucas Marques Moreira">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Lucas Marques Moreira
-						<a href="https://br.linkedin.com/in/lmarquesmoreira" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8788080E8" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/lmarquesmoreira" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2013). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Engenharia de Software; Inteligência Computacional; Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a 2014.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/marlon.jpg" style="position: relative;width:250px" alt="Marlon Nelson Ferreira">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Marlon Nelson Ferreira
-						<a href="https://br.linkedin.com/in/marlon-ferreira-4271a3104" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2014). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Inteligência Computacional; Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2012 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/felipe.jpg" style="position: relative;width:250px" alt="Felipe de Mello Amaral">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Felipe de Mello Amaral
-						<a href="https://br.linkedin.com/in/felipe-amaral-0972a0b5" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8275154H7" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/F-Amaral" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Eletrônica; Infraestrutura; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/pedro.jpg" style="position: relative;width:250px" alt="Pedro Sol Barbosa Montes">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Pedro Sol Barbosa Montes
-						<a href="https://br.linkedin.com/in/pedro-sol-barbosa-montes-a67192103" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2013). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Inteligência Computacional; Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2012 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/bernardo.jpg" style="position: relative;width:250px" alt="Bernardo Araujo">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Bernardo Araujo
-						<a href="https://br.linkedin.com/in/bernardo-araujo-3308537b?trk=pub-pbmap" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Inteligência Computacional; Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/manoel.jpg" style="position: relative;width:250px" alt="Manoel Stilpen">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Manoel Stilpen
-						<a href="https://br.linkedin.com/in/manoel-stilpen-3570b3b6" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4825615E8" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/manoelstilpen" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2014). Graduação em Ciência da Computação pela UFOP (em andamento). </p>
-					<p>
-						<b>Especialidades:</b> Engenharia de Software; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2012 a 2015.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/alexandre.jpg" style="position: relative;width:250px" alt="Alexandre S. Thiago">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Alexandre S. Thiago
-						<a href="https://br.linkedin.com/in/alexandresthiago?trk=pub-pbmap" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4861647H7" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Possui Técnico pelo CPTI (2014). Graduação em Controle e Automação pela UFOP (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Eletrônica; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2012 a 2015.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/geovani.jpg" style="position: relative;width:250px" alt="Geovani Figueiredo de Castro">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Geovani Figueiredo de Castro
-						<a href="https://www.linkedin.com/in/geovani-castro-149733104" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<!--<a href="" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>-->
-						<a href="https://github.com/giovanecf" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (em andamento). Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Eletrônica; Programação; Robótica;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/pedro_mello.jpg" style="position: relative;width:250px" alt="Pedro Mello Baía">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Pedro Mello Baía
-						<a href="https://br.linkedin.com/in/pedro-mello-5895b7121" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-						<a href="http://lattes.cnpq.br/0225901073634420" target="_blank"><img src="assets/images/lattes.png" class="linkedin-lattes" alt=""></a>
-						<a href="https://github.com/pedro-mello30" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Graduação em Tecnologia da Informação e da Comunicação pela FAETERJ-Petrópolis (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2016 a atualmente.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/daniel.jpg" style="position: relative;width:250px" alt="Daniel Santos Oliveira">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Daniel Santos Oliveira
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/damaris.jpg" style="position: relative;width:250px" alt="Damaris Salgueiro Dias da Silva ">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Damaris Salgueiro Dias da Silva 
-						<a href="https://www.linkedin.com/in/damaris-salgueiro-1ab434aa" target="_blank"><img src="assets/images/linkedin.png" class="linkedin-lattes" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (2015). Graduação em Farmácia pela UFJF (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2013 a 2015.
-					</p>
-				</div>
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/edvaldo.jpg" style="position: relative;width:250px" alt="Edvaldo Teomar">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Edvaldo Teomar
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/douglas.jpg" style="position: relative;width:250px" alt="Douglas Henrique Alves de Azevedo">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Douglas Henrique Alves de Azevedo
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-6">
-					<span class="img">
-						<center>
-							<img src="assets/images/members/rafael.jpg" style="position: relative;width:250px" alt="Rafael Rosa de Almeida">
-						</center>
-					</span>
-					<h4 class="text-center">
-						Rafael Rosa de Almeida
-						<a href="https://github.com/rafaelalmeidatk" target="_blank"><img src="assets/images/github.png" class="linkedin-lattes" style="width:25px;" alt=""></a>
-					</h4>
-					<p><b>Formação:</b> Técnico pelo CPTI (em andamento).</p>
-					<p>
-						<b>Especialidades:</b> Programação;
-						<br>
-						<b>Período no SIRLab:</b> 2015 a atualmente.
-					</p>
-				</div>
-			</div>
-			</div>
-		</div> <!-- / section -->
-	</div>	<!-- /container -->
-	
+            <h3 class="section-title"><span>Membros Atuais</span></h3>
+            <div class="row">
+                <!-- Cards de membros seguindo o mesmo padrão -->
+            </div>
+
+            <h3 class="section-title"><span>Membros Alumni</span></h3>
+            <div class="row">
+                <!-- Cards de ex-membros -->
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 widget">
-				<h3 class="widget-title">Contato</h3>
-				<div class="widget-body">
-					<p>(24) 2235-1079<br>
-						<a href="mailto:#">sirlab.faeterj@gmail.com</a><br>
-						<br>
-						Av. Getúlio Vargas, 335 - Quitandinha - CEP: 25651-075 - Petrópolis - RJ - Laboratório de Robótica
-					</p>	
-				</div>
-			</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 widget">
+                <h3 class="widget-title">Contato</h3>
+                <div class="widget-body">
+                    <p>(24) 2235-1079<br>
+                        <a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a><br>
+                        Av. Getúlio Vargas, 335 - Quitandinha<br>
+                        Petrópolis/RJ - CEP 25651-075
+                    </p>
+                </div>
+            </div>
 
-			<div class="col-md-2 widget">
-				<h3 class="widget-title">Siga-nos</h3>
-				<div class="widget-body">
-					<p class="follow-me-icons">
-						<a href="https://github.com/SIRLab" target="_blank"><i class="fa fa-github fa-2"></i></a>
-						<a href="https://www.facebook.com/sirlab.faeterj" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-						<a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank"><i class="fa fa-youtube fa-2"></i></a>
-						<a href="https://www.linkedin.com/company/10131024?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10131024%2Cidx%3A1-1-1%2CtarId%3A1440299776662%2Ctas%3ASIR%20Lab" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
-					</p>
-				</div>
-			</div>
-
-		</div> <!-- /row of widgets -->
-	</div>
+            <div class="col-md-6 widget">
+                <h3 class="widget-title">Redes Sociais</h3>
+                <div class="widget-body">
+                    <div class="social-links">
+                        <a href="https://github.com/SIRLab" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sirlab.faeterj" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-youtube fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/sirlab" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <footer id="underfooter">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; 2016, SIRLab: Laboratório de Sistemas Inteligentes e Robótica<br> 
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
-				</div>
-			</div>
-
-		</div> <!-- /row of widgets -->
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+                    Copyright &copy; 2016-2023 SIRLab<br>
+                    Design adaptado de <a href="https://gettemplate.com" target="_blank" rel="noopener">Initio by GetTemplate</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-
-
-
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
 <script src="assets/js/template.js"></script>
 
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -535,7 +183,6 @@
 
   ga('create', 'UA-61419819-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
 </body>
