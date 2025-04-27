@@ -1,57 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	
-	<title>SIRLab: Trabalhos</title>
-
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
-	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
-	<!-- Icon font -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-	<!-- Custom styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Works</title>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<link rel="stylesheet" href="assets/css/styles.css">
-
-	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 <body>
-
-<header id="header">
-	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="assets/images/sir.png" alt="">
-			<span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
-			<span class="tagline">FAETERJ-Petrópolis<br>
-			<a href="">sirlab.faeterj@gmail.com</a></span>
-		</h1>
-	</div>
-
-	<nav class="navbar navbar-default navbar-sticky">
+	<header>
+		<h1>Works</h1>
+	</header>
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-			
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">SIRLab</a>
 			</div>
-			
-			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
-				
+			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.html">Inicio</a></li>
 					<li><a href="about.html">Sobre</a></li>
 					<li><a href="members.html">Membros</a></li>
 					<li><a href="events.html">Eventos</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projetos <b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
-							<li><a href="2d.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
+							<li class="dropdown-submenu">
+								<a href="#">Futebol Simuladores</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a href="#">CBR 2D</a>
+										<ul class="dropdown-menu">
+											<li><a href="2d-nacional-2025.html">Nacional 2015</a></li>
+										</ul>
+									</li>
+									<li class="dropdown-submenu">
+										<a href="#">Robocup Internacional 2D</a>
+										<ul class="dropdown-menu">
+											<li><a href="2d-2025-internacional.html">Internacional 2025</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
 							<li><a href="build.html">Simulação de Restage: Rescue Jr.</a></li>
 							<li><a href="build.html">Casa Inteligente</a></li>
 						</ul>
@@ -60,132 +59,63 @@
 					<li><a href="media.html">Mídia</a></li>
 					<li><a href="blog.html">História</a></li>
 				</ul>
-			
-			</div><!--/.nav-collapse -->			
-		</div>	
-	</nav>
-</header>
-
-<main id="main">
-
-	<div class="container">
-
-		<div class="row topspace">
-			
-			<!-- Sidebar -->
-			<aside class="col-sm-4 sidebar sidebar-right">
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Trabalhos</h4>
-						<p>Aqui encontram-se todos os trabalhos do SIRLab. Publicações, Team Description Papers (TDPs) e Trabalhos de Conclusão de Curso (TCCs).</p>
-					</div>
-				</div>
-			</aside>
-			<!-- /Sidebar -->
-
-			<!-- Article main content -->
-			<article class="col-sm-8 maincontent">
-				<h3>Publicações</h3>
-				<p>
-					<a href="assets/pdfs/wre2014.pdf" target="_blank"><b>[1] SIRLab: Uma Evolução do Projeto Engenharia-Escola para Competições Robóticas.</b> In: 5th Workshop of Robotics in Education, 2014, São Carlos - SP. 5th Workshop of Robotics in Education, 2014. p. 17-22. Alberto Torres Angonese, Eduardo Krempser da Silva e Paulo Fernando Ferreira Rosa. </a>
-				</p>
-				<p>
-					<a href="assets/pdfs/wre2012.pdf" target="_blank"><b>[2] Projeto de Integração Engenharia - Escola Para Competições Robóticas.</b> In: III Workshop de Robótica Educacional - 2012, 2012, Fortaleza - CE. PROJETO DE INTEGRAÇÃO ENGENHARIA - ESCOLA PARA COMPETIÇÕES ROBÓTICAS, 2012. Alberto Torres Angonese, Paulo Fernando Ferreira Rosa e Stefano Henrique Rodrigues.</a>
-				</p>
-
-				<h3>TCCs</h3>
-				<p>
-					<a href="assets/pdfs/tcc-johnathan.pdf" target="_blank"><b>[1] Construção de um time de futebol de robôs para a categoria IEEE Very Small Size.</b> Trabalho de Conclusão de Curso, Faculdade de Educação Tecnológica do Estado do Rio de Janeiro, FAETERJ 2015, Petrópolis - RJ. Johnathan Fercher da Rosa. </a> 
-				</p>
-
-				<h3>TDPs</h3>
-				<p>
-					<a href="assets/pdfs/soccer2013.pdf" target="_blank"><b>[1] Descrição da Equipe SirSoccer para a Categoria IEEE Very Small Soccer.</b> Team Description Paper, Fortaleza 2013. Asafe Alves Lopes, Bernardo Barbosa, Christian Mury, Johnathan Fercher da Rosa, Matthew Balanda, Oscar Neiva Eulálio Neto, Renato L. Paula, Eduardo Krempser da Silva e Alberto Torres Angonese. </a>
-				</p>
-				<p>
-					<a href="assets/pdfs/2d2014.pdf" target="_blank"><b>[2] Sir2d 2014: Descrição do Time - LARC 2014.</b> Team Description Paper, São Carlos 2014. Lucas Marques Moreira, Johnathan Fercher da Rosa, Frederico Gomes, Marlon Nelson G. S. Ferreira, Eduardo Krempser da Silva e Alberto Torres Angonese. </a>
-				</p>
-				<p>
-					<a href="assets/pdfs/soccer2014.pdf" target="_blank"><b>[3] Descrição da Equipe SIRSoccer para a Categoria IEEE Very Small Size.</b> Team Description Paper, São Carlos 2014. Johnathan Fercher da Rosa, Oscar Neiva Eulálio Neto, Hebert Luiz Cabral da Silva, Lucas Marques Moreira, Lucas Borsatto Simão, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
-				</p>
-				<p>
-					<a href="assets/pdfs/soccer2015a.pdf" target="_blank"><b>[4] Descrição da Equipe SirSoccerVSS-A para a Categoria IEEE Very Small Size Soccer.</b> Team Description Paper, Uberlândia 2015. Oscar Neiva Eulálio Neto, Lucas Borsatto Simão, Hebert Luiz Cabral da Silva, Johnathan Fercher da Rosa, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
-				</p>
-				<p>
-					<a href="assets/pdfs/soccer2015b.pdf" target="_blank"><b>[5] Descrição da Equipe SirSoccerVSS-B para a Categoria IEEE Very Small Size Soccer.</b> Team Description Paper, Uberlândia 2015. Manoel Stilpen, Felipe de Mello Amaral, Samantha Vilaça, Marina Barros, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
-				</p>
-			</article>
-			<!-- /Article -->
-			
-
+			</div>
 		</div>
-	</div>	<!-- /container -->
-	
-</main>
+	</nav>
+	<main>
+		<div class="container">
+			<div class="row topspace">
+				<!-- Sidebar -->
+				<aside class="col-sm-4 sidebar sidebar-right">
+					<div class="row widget">
+						<div class="col-xs-12">
+							<h4>Trabalhos</h4>
+							<p>Aqui encontram-se todos os trabalhos do SIRLab. Publicações, Team Description Papers (TDPs) e Trabalhos de Conclusão de Curso (TCCs).</p>
+						</div>
+					</div>
+				</aside>
+				<!-- /Sidebar -->
 
-<footer id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 widget">
-				<h3 class="widget-title">Contato</h3>
-				<div class="widget-body">
-					<p>(24) 2235-1079<br>
-						<a href="mailto:#">sirlab.faeterj@gmail.com</a><br>
-						<br>
-						Av. Getúlio Vargas, 335 - Quitandinha - CEP: 25651-075 - Petrópolis - RJ - Laboratório de Robótica
-					</p>	
-				</div>
-			</div>
-
-			<div class="col-md-2 widget">
-				<h3 class="widget-title">Siga-nos</h3>
-				<div class="widget-body">
-					<p class="follow-me-icons">
-						<a href="https://github.com/SIRLab" target="_blank"><i class="fa fa-github fa-2"></i></a>
-						<a href="https://www.facebook.com/sirlab.faeterj" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
-						<a href="https://www.youtube.com/channel/UCLXQhza5oA2EJYsYDbr41ZQ" target="_blank"><i class="fa fa-youtube fa-2"></i></a>
-						<a href="https://www.linkedin.com/company/10131024?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10131024%2Cidx%3A1-1-1%2CtarId%3A1440299776662%2Ctas%3ASIR%20Lab" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
+				<!-- Article main content -->
+				<article class="col-sm-8 maincontent">
+					<h3>Publicações</h3>
+					<p>
+						<a href="assets/pdfs/wre2014.pdf" target="_blank"><b>[1] SIRLab: Uma Evolução do Projeto Engenharia-Escola para Competições Robóticas.</b> In: 5th Workshop of Robotics in Education, 2014, São Carlos - SP. 5th Workshop of Robotics in Education, 2014. p. 17-22. Alberto Torres Angonese, Eduardo Krempser da Silva e Paulo Fernando Ferreira Rosa. </a>
 					</p>
-				</div>
+					<p>
+						<a href="assets/pdfs/wre2012.pdf" target="_blank"><b>[2] Projeto de Integração Engenharia - Escola Para Competições Robóticas.</b> In: III Workshop de Robótica Educacional - 2012, 2012, Fortaleza - CE. PROJETO DE INTEGRAÇÃO ENGENHARIA - ESCOLA PARA COMPETIÇÕES ROBÓTICAS, 2012. Alberto Torres Angonese, Paulo Fernando Ferreira Rosa e Stefano Henrique Rodrigues.</a>
+					</p>
+
+					<h3>TCCs</h3>
+					<p>
+						<a href="assets/pdfs/tcc-johnathan.pdf" target="_blank"><b>[1] Construção de um time de futebol de robôs para a categoria IEEE Very Small Size.</b> Trabalho de Conclusão de Curso, Faculdade de Educação Tecnológica do Estado do Rio de Janeiro, FAETERJ 2015, Petrópolis - RJ. Johnathan Fercher da Rosa. </a> 
+					</p>
+
+					<h3>TDPs</h3>
+					<p>
+						<a href="assets/pdfs/soccer2013.pdf" target="_blank"><b>[1] Descrição da Equipe SirSoccer para a Categoria IEEE Very Small Soccer.</b> Team Description Paper, Fortaleza 2013. Asafe Alves Lopes, Bernardo Barbosa, Christian Mury, Johnathan Fercher da Rosa, Matthew Balanda, Oscar Neiva Eulálio Neto, Renato L. Paula, Eduardo Krempser da Silva e Alberto Torres Angonese. </a>
+					</p>
+					<p>
+						<a href="assets/pdfs/2d2014.pdf" target="_blank"><b>[2] Sir2d 2014: Descrição do Time - LARC 2014.</b> Team Description Paper, São Carlos 2014. Lucas Marques Moreira, Johnathan Fercher da Rosa, Frederico Gomes, Marlon Nelson G. S. Ferreira, Eduardo Krempser da Silva e Alberto Torres Angonese. </a>
+					</p>
+					<p>
+						<a href="assets/pdfs/soccer2014.pdf" target="_blank"><b>[3] Descrição da Equipe SIRSoccer para a Categoria IEEE Very Small Size.</b> Team Description Paper, São Carlos 2014. Johnathan Fercher da Rosa, Oscar Neiva Eulálio Neto, Hebert Luiz Cabral da Silva, Lucas Marques Moreira, Lucas Borsatto Simão, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
+					</p>
+					<p>
+						<a href="assets/pdfs/soccer2015a.pdf" target="_blank"><b>[4] Descrição da Equipe SirSoccerVSS-A para a Categoria IEEE Very Small Size Soccer.</b> Team Description Paper, Uberlândia 2015. Oscar Neiva Eulálio Neto, Lucas Borsatto Simão, Hebert Luiz Cabral da Silva, Johnathan Fercher da Rosa, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
+					</p>
+					<p>
+						<a href="assets/pdfs/soccer2015b.pdf" target="_blank"><b>[5] Descrição da Equipe SirSoccerVSS-B para a Categoria IEEE Very Small Size Soccer.</b> Team Description Paper, Uberlândia 2015. Manoel Stilpen, Felipe de Mello Amaral, Samantha Vilaça, Marina Barros, Alberto Torres Angonese e Eduardo Krempser da Silva.</a>
+					</p>
+				</article>
+				<!-- /Article -->
 			</div>
-
-		</div> <!-- /row of widgets -->
-	</div>
-</footer>
-
-<footer id="underfooter">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 widget">
-				<div class="widget-body">
-					<p class="text-right">
-						Copyright &copy; 2016, SIRLab: Laboratório de Sistemas Inteligentes e Robótica<br> 
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
-				</div>
-			</div>
-
-		</div> <!-- /row of widgets -->
-	</div>
-</footer>
-
-
-
-
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="assets/js/template.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61419819-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+		</div>	
+	</main>
+	<footer>
+		<p>&copy; 2023 SIRLab</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
