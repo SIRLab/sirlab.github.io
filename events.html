@@ -1,268 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eventos do Laboratório de Sistemas Inteligentes e Robótica - FAETERJ Petrópolis">
-    
-    <title>SIRLab - Eventos</title>
-    
-    <!-- Bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;700&display=swap">
-    
-    <!-- Estilos Customizados -->
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-        }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-        }
+	<title>SIRLab: Eventos</title>
 
-        .parallax-header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('assets/images/lab-bg.jpg') center/cover fixed;
-            color: white;
-            padding: 120px 0;
-        }
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-        .event-card {
-            transition: transform 0.3s;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<link rel="stylesheet" href="assets/css/styles.css">
 
-        .event-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-        }
-    </style>
-</head>
-
+	</head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="parallax-header">
-        <div class="container text-center">
-            <img src="assets/images/sir-logo.png" alt="Logo SIRLab" class="mb-4" width="150">
-            <h1 class="display-4 mb-3">Laboratório de Sistemas Inteligentes e Robótica</h1>
-            <p class="lead">FAETERJ Petrópolis</p>
-        </div>
-    </header>
 
-    <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">SIRLab</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="events.html">Eventos</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Projetos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="vss.html">Futebol de Robôs</a></li>
-                            <li><a class="dropdown-item" href="2d.html">Simulação 2D</a></li>
-                            <li><a class="dropdown-item" href="rescue.html">Simulação de Resgate</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header id="header">
+	<div id="head" class="parallax" data-parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="assets/images/sir.png" alt="">
+			<span class="title">Laboratório de Sistemas Inteligentes e Robótica</span>
+			<span class="tagline">FAETERJ-Petrópolis<br>
+			<a href="mailto:sirlab.faeterj@gmail.com">sirlab.faeterj@gmail.com</a></span>
+		</h1>
+	</div>
 
-    <!-- Conteúdo Principal -->
-    <main class="container my-5">
-        <div class="row g-4">
-            <!-- Sidebar -->
-            <aside class="col-lg-4">
-                <div class="card event-card">
-                    <div class="card-body">
-                        <h2 class="h4 card-title mb-4">Navegação de Eventos</h2>
-                        <div class="list-group">
-                            <a href="#cbr" class="list-group-item list-group-item-action d-flex align-items-center">
-                                <i class="fas fa-robot me-3"></i>
-                                Competição Brasileira
-                            </a>
-                            <a href="#larc" class="list-group-item list-group-item-action d-flex align-items-center">
-                                <i class="fas fa-globe-americas me-3"></i>
-                                Competição Latino-Americana
-                            </a>
-                            <a href="#obr" class="list-group-item list-group-item-action d-flex align-items-center">
-                                <i class="fas fa-graduation-cap me-3"></i>
-                                Olimpíada Brasileira
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
 
-            <!-- Eventos -->
-            <div class="col-lg-8">
-                <!-- CBR -->
-                <section id="cbr" class="card event-card mb-4">
-                    <img src="assets/images/cbr-event.jpg" class="card-img-top" alt="Competição Brasileira de Robótica">
-                    <div class="card-body">
-                        <h2 class="card-title h3">Competição Brasileira de Robótica</h2>
-                        <div class="meta mb-3">
-                            <span class="badge bg-primary">Anual</span>
-                            <span class="text-muted ms-2"><i class="fas fa-map-marker-alt"></i> Várias Cidades</span>
-                        </div>
-                        <p class="card-text">Principal evento nacional de robótica competitiva que reúne instituições de ensino superior desde 2003.</p>
-                        
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h3 class="h5">Categorias Principais</h3>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-futbol me-2"></i>Futebol de Robôs</li>
-                                            <li><i class="fas fa-laptop-code me-2"></i>Simulação 2D/3D</li>
-                                            <li><i class="fas fa-home me-2"></i>RoboCup @Home</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h3 class="h5">Estatísticas</h3>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-users me-2"></i>+500 participantes</li>
-                                            <li><i class="fas fa-university me-2"></i>+50 instituições</li>
-                                            <li><i class="fas fa-trophy me-2"></i>15 edições realizadas</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
 
-                <!-- LARC -->
-                <section id="larc" class="card event-card mb-4">
-                    <div class="card-body">
-                        <h2 class="card-title h3">Competição Latino-Americana</h2>
-                        <div class="row g-4 align-items-center">
-                            <div class="col-md-6">
-                                <img src="assets/images/larc-event.jpg" class="img-fluid rounded" alt="Competição Latino-Americana">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Evento internacional que promove a integração entre países da América Latina através da robótica:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex align-items-center">
-                                        <i class="fas fa-flag me-3"></i>
-                                        Países participantes: Brasil, Argentina, Chile
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center">
-                                        <i class="fas fa-calendar-alt me-3"></i>
-                                        Realização bienal
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <!-- OBR -->
-                <section id="obr" class="card event-card">
-                    <div class="card-body">
-                        <h2 class="card-title h3">Olimpíada Brasileira de Robótica</h2>
-                        <div class="alert alert-info">
-                            <h3 class="h4">Edição 2023</h3>
-                            <p>Competição nacional para estudantes do ensino fundamental e médio:</p>
-                            <ul class="icon-list">
-                                <li><i class="fas fa-user-graduate"></i> Foco em educação STEM</li>
-                                <li><i class="fas fa-tasks"></i> Desafios práticos de resgate</li>
-                                <li><i class="fas fa-award"></i> Premiação por categorias</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Sobre</a></li>
+					<li><a href="members.html">Membros</a></li>
+					<li class="active"><a href="events.html">Eventos</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="vss.html">Futebol de Robôs: IEEE Very Small Size</a></li>
+							<li><a href="2d.html">Futebol Simulado: RoboCup 2D Soccer Simulation</a></li>
+							<li><a href="build.html">Simulação de Restage: Rescue Jr.</a></li>
+							<li><a href="build.html">Casa Inteligente</a></li>
+						</ul>
+					</li>
+					<li><a href="works.html">Trabalhos</a></li>
+					<li><a href="media.html">Mídia</a></li>
+					<li><a href="blog.html">História</a></li>
+				</ul>
 
-    <!-- Rodapé -->
-    <footer class="mt-auto">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h3 class="h5">Contato</h3>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt me-2"></i>Av. Getúlio Vargas, 335</li>
-                        <li><i class="fas fa-phone me-2"></i>(24) 2235-1079</li>
-                        <li><i class="fas fa-envelope me-2"></i>sirlab@faeterj.edu.br</li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-4">
-                    <h3 class="h5">Links Rápidos</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="about.html" class="text-white">Sobre Nós</a></li>
-                        <li><a href="projects.html" class="text-white">Projetos</a></li>
-                        <li><a href="contact.html" class="text-white">Contato</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-4">
-                    <h3 class="h5">Redes Sociais</h3>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="text-center">
-                <p class="mb-0">
-                    © 2023 SIRLab - Todos os direitos reservados<br>
-                    Desenvolvido com <i class="fas fa-heart text-danger"></i> pela equipe
-                </p>
-            </div>
-        </div>
-    </footer>
+			</div></div>
+	</nav>
+</header>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Ativa scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+
+			<aside class="col-sm-4 sidebar sidebar-right">
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>Eventos</h4>
+						<p>Aqui encontram-se todos os eventos e competições que o SIRLab participa.</p>
+					</div>
+				</div>
+			</aside>
+			<article class="col-sm-8 maincontent">
+				<h4>Competição Brasileira de Robótica</h4>
+				<p><img src="assets/images/cbr2013.jpg" alt="" class="" width="100%" ></p>
+				<p>
+					A competição brasileira de robótica (CBR), na foto em sua realização em Fortaleza - CE (2013), é uma das competições referentes a Competição Mundial de Robótica (RoboCup), nela alunos de graduação e pós-graduação se empenham para construir robôs afim de participar das categorias existentes e desenvolver pesquisa nas áreas de robótica e inteligência computacional e artificial, realizada desde 2003, a competição já passou pelas localidades: <b>Bauru - SP, Salvador - BA, São Luis - MA, Campo Grande - MS, Florianópolis - SC, Salvador - BA, Brasília - DF, São Bernardo do Campo - SP, São João del-Rei - MG, Fortaleza - CE, São Carlos - SP e Uberlândia - MG</b>.
+				</p>
+				<p>
+					O evento abriga as seguintes competições: <b>RoboCup Small Size Soccer (F-180), RoboCup 2D Soccer Simulation, RoboCup 3D Soccer Simulation, RoboCup Humanoid and Standard Plataform League (SPL), RoboCup Rescue Simulation Agents, RoboCup @Home, RoboCup Junior, RoboCup Festo Logistics, IEEE Standard Educational Kits (SEK), IEEE Open, IEEE Very Small Size Soccer (VSS) e IEEE Humanoid Robot Racing.</b> <a href="http://www.cbrobotica.org/" target="_blank">Site oficial</a>.
+				</p>
+				<h4>Competição Latino-Americana de Robótica</h4>
+				<p><img src="assets/images/larc.jpg" alt="" class="" width="100%" ></p>
+				<p>
+					A competição latino-americana de robótica (LARC), na foto em sua realização em São Carlos - SP (2014), é uma das
